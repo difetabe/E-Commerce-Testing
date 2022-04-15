@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- <link rel="stylesheet" href="styles/styles.css" /> -->
     <title>Document</title>
   </head>
   <body>
@@ -101,14 +101,14 @@
               </filter>
             </defs>
           </svg>
-          <!-- <nav class="header__menu nav-menu">
+          <nav class="header__menu nav-menu">
             <a class="nav-menu__item" href="">О студии</a>
             <a class="nav-menu__item" href="">Портфолио</a>
             <a class="nav-menu__item" href="">Наши услуги</a>
             <a class="nav-menu__item" href="">Новости</a>
             <a class="nav-menu__item" href="">Отзывы</a>
             <a class="nav-menu__item" href="">Контакты</a>
-          </nav> -->
+          </nav>
         </div>
       </header>
       <main>
@@ -254,95 +254,111 @@
               </a>
             </div>
 
-            <div class="get-consultation">
+            <div class="section-4__feedback">
               <p>
                 Оставьте свою заявку, чтобы получить БЕСПЛАТНУЮ консультацию!
               </p>
-              <button>Оставить заявку</button>
+              <button class="section-4__button">Оставить заявку</button>
             </div>
           </div>
         </section>
 
-        <section class="clients>">
-          <div class="container">
-            <h2>НАШИ КЛИЕНТЫ</h2>
-            <!-- доделать, когда определюсь с реализацией -->
-            <div class="clients__gallery_desktop"></div>
-
-            <div class="clients__body_mobile"></div>
+        <section class="section-5>">
+          <h2 class="section-5__title">НАШИ КЛИЕНТЫ</h2>
+          <div class="section-5__slider">
+            <div class="section-5__img"></div>
+            <div class="section-5__img"></div>
+            <div class="section-5__img"></div>
+            <div class="section-5__img"></div>
           </div>
+          <div class="section-5__slider-controls"></div>
         </section>
 
-        <section class="section_footer">
+        <section class="section-6">
           <div class="container">
-            <div class="section_footer__body">
-              <div class="section_footer__content">
-                <h3 class="section_footer__title"></h3>
-                <p class="section_footer__descriptin"></p>
-                <div
-                  class="section_footer__get-free-block content-block_get-free"
-                >
-                  <p class="content-block_get-free__title">
-                    Получите бесплатно
-                  </p>
-                  <ul class="list_get-free-block">
-                    <li class="list__item list_get-free-block__item">
-                      Личная косультация
-                    </li>
-                    <li class="list__item list_get-free-block__item">
-                      Стратегия запуска и продвижения
-                    </li>
-                    <li class="list__item list_get-free-block__item">
-                      Коммерческое предложение
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <p class="section-6__subtitle"></p>
+            <p class="section_6__title"></p>
+            <div class="section-6__banner">
+              <p>+ Получите бесплатно</p>
+              <ul class="section-6__list">
+                <li>Личная косультация</li>
+                <li>Стратегия запуска и продвижения</li>
+                <li>Коммерческое предложение</li>
+              </ul>
             </div>
+            <div class="section-6__feedback-form">
+              <form>
+                <label for="name">Имя</label>
+                <input class="section-6__input" id="name" placeholder="Имя" />
 
-            <footer class="footer">
-              <div class="logo-wrap_footer">
-                <img src="styles/img/footer/Logo.png" alt="" />
-              </div>
+                <label for="phone-number">Номер телефона</label>
+                <input
+                  class="section-6__input"
+                  type="tel"
+                  id="phone-number"
+                  placeholder="+7 (000) 000-00-00"
+                />
 
-              <div class="contacts">
-                <p class="contacts__title">Контакты</p>
-                <ul class="contacts__list list">
-                  <li class="list__item">ул. Волочаевская, 8г</li>
-                  <li class="list__item">+7 (4212)470-300</li>
-                  <li class="list__item">+7 (4212) 25-30-85</li>
-                </ul>
-              </div>
+                <label for="comment">Расскажите о своей задаче</label>
+                <input
+                  class="section-6__comment"
+                  id="comment"
+                  placeholder="Расскажите о своей задаче"
+                />
 
-              <div class="social-media">
-                <p class="social-media__title">Мы в соцсетях</p>
-                <ul class="social-media__list list">
-                  <li class="list__item">Vkontakte</li>
-                </ul>
-              </div>
-
-              <div class="map">
-                <p class="map__text">Найди нас на карте</p>
-                <svg
-                  class="map__icon"
-                  width="20"
-                  height="50"
-                  viewBox="0 0 20 50"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <input id="terms-of-use" type="checkbox" />
+                <label for="terms-of-use" class="terms-of-use-container"
+                  >Нажимая на кнопку "Отправить", я даю согласие на обработку
+                  персональных данных.</label
                 >
-                  <path
-                    d="M1.67578 49.1505L18.0453 24.2297L1.82244 0.998046"
-                    stroke="white"
-                    stroke-width="2"
-                  />
-                </svg>
-                <img class="map__img" src="styles/img/footer/Map.png" alt="" />
-              </div>
-            </footer>
+
+                <input class="section-6__captcha" id="captcha" type="image" />
+                <label for="captcha"></label>
+
+                <button class="section-6__button">Отправить</button>
+              </form>
+            </div>
           </div>
         </section>
       </main>
+      <footer class="footer">
+        <div class="footer__logo">
+          <img src="styles/img/footer/Logo.png" alt="" />
+        </div>
+
+        <div class="footer__content-block">
+          <span class="contacts__title">Контакты</span>
+          <span>ул. Волочаевская, 8г</span>
+          <span>+7 (4212)470-300</span>
+          <span>+7 (4212) 25-30-85</span>
+        </div>
+
+        <div class="footer__content-block">
+          <span class="contacts__title">Мы в соцсетях</span>
+          <a>Vkontakte</a>
+          <a>Linkedin</a>
+          <a>Telegram</a>
+        </div>
+
+        <div class="map-block">
+          <p>Найди нас на карте</p>
+          <svg
+            class="map-block__icon"
+            width="20"
+            height="50"
+            viewBox="0 0 20 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.67578 49.1505L18.0453 24.2297L1.82244 0.998046"
+              stroke="white"
+              stroke-width="2"
+            />
+          </svg>
+          <img class="map-block__img" src="styles/img/footer/Map.png" alt="" />
+        </div>
+      </footer>
     </div>
   </body>
 </html>
