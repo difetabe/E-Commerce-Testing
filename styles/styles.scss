@@ -65,6 +65,11 @@ body {
   background-color: $main-bg-dark-color;
 }
 
+.wrapper {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 .container {
   width: 87%;
   max-width: 1410px;
@@ -295,20 +300,108 @@ body {
       content: "";
     }
   }
-
-  &__under-button-text {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 15px;
-
-    font-variant: small-caps;
-    opacity: 0.5;
-    align-self: center;
-  }
 }
 
+.section-2 {
+  padding: 40px 0 30px;
+  background-color: #fff;
+  color: #393939;
 
+  &__title {
+    width: 75%;
+    margin: 0 auto 23px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  }
 
+  &__cards-steps-container {
+    width: 100%;
+    position: relative;
+    left: 15px;
+
+    &::before {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      height: 98%;
+      width: 5px;
+      border-left: 5px solid #929292;
+      border-image-source: url("data:image/svg+xml,%3Csvg width='5' height='12' viewBox='0 0 5 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='5' height='5' fill='%23929292'/%3E%3C/svg%3E%0A");
+      border-image-slice: 30%;
+      border-image-repeat: repeat;
+      content: "";
+    }
+  }
+}
+.card-step {
+  padding: 15px 30px 15px 0;
+  margin-left: 15px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  &:first-child {
+  padding-top: 0;
+  }
+  &:last-child {
+    border-color: transparent;
+    padding-bottom: 0;
+  }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    .card-step__number {
+      color: #EF8B54;
+    }
+  }
+
+  &__number {
+    margin-right: 11px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.1em;
+    order: 1;
+  }
+
+  &__title {
+    flex-basis: 75%;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    order: 2;
+  }
+
+  &__icon {
+    margin-left: auto;
+    order: 3;
+    width: 15px;
+    height: 15px;
+    background: no-repeat center/cover url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2558 7.49998C14.2558 3.77905 11.2325 0.744171 7.49995 0.744171C3.7674 0.744171 0.744141 3.77905 0.744141 7.49998C0.744141 11.2209 3.77902 14.2558 7.49995 14.2558C11.2209 14.2558 14.2558 11.2209 14.2558 7.49998ZM1.69763 7.49998C1.69763 4.30231 4.30228 1.69766 7.49995 1.69766C10.6976 1.69766 13.3023 4.30231 13.3023 7.49998C13.3023 10.6977 10.6976 13.3023 7.49995 13.3023C4.30228 13.3023 1.69763 10.6977 1.69763 7.49998Z' fill='black'/%3E%3Cpath d='M10.8719 9.0581C10.965 8.96507 11.0115 8.84879 11.0115 8.72089C11.0115 8.60461 10.965 8.4767 10.8719 8.38368L7.80218 5.31391C7.70916 5.22088 7.59288 5.17437 7.46497 5.17437C7.33706 5.17437 7.22078 5.22088 7.12776 5.31391L4.05799 8.38368C3.87195 8.56972 3.87195 8.87205 4.05799 9.0581C4.24404 9.24414 4.54636 9.24414 4.73241 9.0581L7.46497 6.32554L10.1975 9.0581C10.3836 9.24414 10.6859 9.24414 10.8719 9.0581Z' fill='black'/%3E%3C/svg%3E%0A");
+    &_active {
+      background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2558 7.49998C14.2558 3.77905 11.2325 0.744171 7.49995 0.744171C3.7674 0.744171 0.744141 3.77905 0.744141 7.49998C0.744141 11.2209 3.77902 14.2558 7.49995 14.2558C11.2209 14.2558 14.2558 11.2209 14.2558 7.49998ZM1.69763 7.49998C1.69763 4.30231 4.30228 1.69766 7.49995 1.69766C10.6976 1.69766 13.3023 4.30231 13.3023 7.49998C13.3023 10.6977 10.6976 13.3023 7.49995 13.3023C4.30228 13.3023 1.69763 10.6977 1.69763 7.49998Z' fill='black'/%3E%3Cpath d='M10.8719 9.0581C10.965 8.96507 11.0115 8.84879 11.0115 8.72089C11.0115 8.60461 10.965 8.4767 10.8719 8.38368L7.80218 5.31391C7.70916 5.22088 7.59288 5.17437 7.46497 5.17437C7.33706 5.17437 7.22078 5.22088 7.12776 5.31391L4.05799 8.38368C3.87195 8.56972 3.87195 8.87205 4.05799 9.0581C4.24404 9.24414 4.54636 9.24414 4.73241 9.0581L7.46497 6.32554L10.1975 9.0581C10.3836 9.24414 10.6859 9.24414 10.8719 9.0581V9.0581Z' fill='black'/%3E%3C/svg%3E ");
+    }
+  }
+
+  &__description {
+    display: none;
+    order: 5;
+    flex-basis: 1;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 17px;
+    opacity: 0.7;
+    margin-top: 10px;
+    &_opened {
+      display: block;
+    }
+  }
+}
 
 // .how-we-work {
 //   background-color: #fff;
