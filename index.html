@@ -210,7 +210,6 @@
           <div class="container">
             <h2 class="section-4__title"></h2>
             <div class="section-4__cards-container">
-
               <a class="card">
                 <div class="card__img-wrap">
                   <img
@@ -272,32 +271,38 @@
         <section class="section-5">
           <h2 class="section-5__title">НАШИ КЛИЕНТЫ</h2>
           <div class="section-5__slider">
-              <img class="section-5__img" src="styles/img/clients/1.png" alt="">
-              <img class="section-5__img" src="styles/img/clients/2.png" alt="">
-              <img class="section-5__img" src="styles/img/clients/3.png" alt="">
-              <img class="section-5__img" src="styles/img/clients/4.png" alt="">
+            <img class="section-5__img" src="styles/img/clients/1.png" alt="" />
+            <img class="section-5__img" src="styles/img/clients/2.png" alt="" />
+            <img class="section-5__img" src="styles/img/clients/3.png" alt="" />
+            <img class="section-5__img" src="styles/img/clients/4.png" alt="" />
           </div>
           <div class="section-5__slider-controls"></div>
         </section>
 
         <section class="section-6">
           <div class="container">
-            <p class="section-6__subtitle"></p>
-            <p class="section_6__title"></p>
-            <div class="section-6__banner">
-              <p>+ Получите бесплатно</p>
-              <ul class="section-6__list">
-                <li>Личная косультация</li>
-                <li>Стратегия запуска и продвижения</li>
-                <li>Коммерческое предложение</li>
-              </ul>
-            </div>
-            <div class="section-6__feedback-form">
-              <form>
-                <label for="name">Имя</label>
+            <div class="section-6__body">
+              <p class="section-6__subtitle">
+                Оставьте заявку, чтобы узнать, как создать свой Интернет-магазин
+              </p>
+              <p class="section-6__title">
+                Интернет-магазин, который приносит прибыль
+              </p>
+              <div class="section-6__banner">
+                <span>Получите бесплатно</span>
+                <ul class="section-6__list">
+                  <li>Личная косультация</li>
+                  <li>Стратегия запуска и продвижения</li>
+                  <li>Коммерческое предложение</li>
+                </ul>
+              </div>
+              <form class="section-6__feedback-form">
+                <label class="_sr-only" for="name">Имя</label>
                 <input class="section-6__input" id="name" placeholder="Имя" />
 
-                <label for="phone-number">Номер телефона</label>
+                <label class="_sr-only" for="phone-number"
+                  >Номер телефона</label
+                >
                 <input
                   class="section-6__input"
                   type="tel"
@@ -305,20 +310,22 @@
                   placeholder="+7 (000) 000-00-00"
                 />
 
-                <label for="comment">Расскажите о своей задаче</label>
-                <input
+                <textarea
                   class="section-6__comment"
-                  id="comment"
                   placeholder="Расскажите о своей задаче"
-                />
+                ></textarea>
 
-                <input id="terms-of-use" type="checkbox" />
-                <label for="terms-of-use" class="terms-of-use-container"
-                  >Нажимая на кнопку "Отправить", я даю согласие на обработку
+                <input
+                  class="terms-of-use-input _sr-only"
+                  id="terms-of-use"
+                  type="checkbox"
+                />
+                <label for="terms-of-use" class="terms-of-use-container">
+                  Нажимая на кнопку "Отправить", я даю согласие на обработку
                   персональных данных.</label
                 >
 
-                <input class="section-6__captcha" id="captcha" type="image" />
+                <input class="section-6__captcha" id="captcha" type="image" src="styles/img/footer/captcha.png"/>
                 <label for="captcha"></label>
 
                 <button class="section-6__button">Отправить</button>
