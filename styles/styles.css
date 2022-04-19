@@ -650,20 +650,10 @@ body {
   margin-bottom: 38px;
 }
 
-.section-5__slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 55px;
-}
-
 .section-5__img {
-  padding: 0 18%;
-  width: 67%;
-  height: auto;
+  min-width: 210px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .section-5__slider-controls {
@@ -692,7 +682,6 @@ body {
 
 .section-6 {
   position: relative;
-  top: -150px;
   padding: 150px 0 85px;
   background: no-repeat top center/cover url("img/footer/fancycrave-277756-unsplash.png");
 }
@@ -872,7 +861,7 @@ body {
 
 .footer {
   position: relative;
-  top: -75px;
+  padding: 50px 0;
 }
 
 .footer__body {
