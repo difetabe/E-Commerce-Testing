@@ -4,50 +4,50 @@ $accent-color: #ff834e;
 $second-text: #393939;
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Light.ttf');
+  font-family: Montserrat;
+  src: url('./fonts/Montserrat-Light.ttf');
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Regular.ttf');
+  font-family: Montserrat;
+  src: url('./fonts/Montserrat-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Medium.ttf');
+  font-family: Montserrat;
+  src: url('./fonts/Montserrat-Medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/Montserrat-SemiBold.ttf');
+  font-family: Montserrat;
+  src: url('./fonts/Montserrat-SemiBold.ttf');
   font-weight: 600;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Bold.ttf');
+  font-family: Montserrat;
+  src: url('./fonts/Montserrat-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('fonts/Roboto-Light.ttf');
+  font-family: Roboto;
+  src: url('./fonts/Roboto-Light.ttf');
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('fonts/Roboto-Medium.ttf');
+  font-family: Roboto;
+  src: url('./fonts/Roboto-Medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'SourceSansPro';
-  src: url('fonts/SourceSansPro-Light.ttf');
+  font-family: SourceSansPro;
+  src: url('./fonts/SourceSansPro-Light.ttf');
   font-weight: 300;
 }
 
@@ -60,7 +60,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   color: $text;
   background-color: $main-bg-dark-color;
 }
@@ -232,7 +232,7 @@ body {
     background-color: $accent-color;
     padding: 15px;
     text-align: left;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -265,39 +265,6 @@ body {
     opacity: 0.5;
     order: 6;
     align-self: center;
-  }
-
-  &__button {
-    width: 100%;
-    border: none;
-    color: $text;
-    position: relative;
-    background-color: $accent-color;
-    padding: 15px;
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 11px;
-    align-self: center;
-
-    &::before {
-      content: "Заказать звонок";
-    }
-
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 58px;
-      height: 100%;
-      background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.21895 1.45829C6.00642 1.45829 5.83412 1.286 5.83412 1.07346C5.83412 0.860916 6.00642 0.688619 6.21895 0.688619L12.5893 0.688618C12.7164 0.688619 12.8291 0.750225 12.8992 0.845205C12.9935 0.915348 13.0545 1.0276 13.0545 1.15412L13.0545 7.5245C13.0545 7.73704 12.8822 7.90934 12.6697 7.90934C12.4571 7.90934 12.2848 7.73704 12.2848 7.5245L12.2848 1.85761L0.823379 13.3191C0.673091 13.4693 0.429427 13.4693 0.279138 13.3191C0.12885 13.1688 0.12885 12.9251 0.279138 12.7748L11.5957 1.45829L6.21895 1.45829Z' fill='white'/%3E%3C/svg%3E ");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-color: #de774b;
-      content: "";
-    }
   }
 }
 
@@ -750,7 +717,7 @@ body {
   }
 
   &__input {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -763,7 +730,7 @@ body {
   }
 
   &__comment {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -870,9 +837,9 @@ body {
     align-items: center;
 
     &__icon {
-      margin-right: 26px;
-      width: 20px;
-      min-width: 20px;
+      margin: 0 30px 0 22px;
+      width: 17px;
+      min-width: 17px;
     }
 
     &__img {
