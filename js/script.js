@@ -21,14 +21,13 @@ $(".section-5__slider").slick({
       breakpoint: 1023,
       settings: {
         slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: true,
+        nextArrow: true
       }
-      
     }
     
   ],
   appendArrows: $('.section-5__slider-controls')
-});
-
-$('.single-item-rtl').slick({
-  rtl: true
 });
